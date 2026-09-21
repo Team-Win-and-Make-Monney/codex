@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+# Merge with the Team central configuration and Team organization settings.
+inheritance: true
+
+# Public repository: keep private organization context (MCP servers, issue
+# trackers, organization-wide learnings, other issues/PRs) out of public reviews.
+knowledge_base:
+  learnings:
+    scope: local
+  issues:
+    scope: local
+  pull_requests:
+    scope: local
+  mcp:
+    usage: disabled
+  linear:
+    usage: disabled
+  jira:
+    usage: disabled
